@@ -1,0 +1,177 @@
+!Docs/Build
+!lindisfarne-tools/protogen/protogen.exe
+!scripts/build
+**/.vscode
+**/_UpgradeReport_Files
+**/Backup
+**/launchSettings.json
+**/obj
+**/payloads/
+**/Properties/launchSettings.json
+**/Results_xml/*
+**/TestInput/*
+*.cqa
+*.csproj.user
+*.exe
+*.log
+*.nupkg
+*.opendb
+*.orig
+*.resources
+*.sdf
+*.suo
+*.swn
+*.swo
+*.swp
+*.uep
+*.user
+*.VC.db
+*.wixobj
+*.wixpdb
+*.zip
+.gradle
+.vs
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+/.vscode/
+/BioPharm/Reprocess
+/BioPharm/Waters.Biopharm.Web/*.trx
+/BioPharm/Waters.Biopharm.Web/wwwroot/
+/BioPharm/Web
+/published_web.zip
+/tools/
+_ccmwaid.inf
+Adobe
+artifacts/
+bin
+BioPharm/.vscode/launch.json
+build/
+DBGroup/buildDB_UsingDebug64.bat
+DBGroup/DB_BaseFramework/
+Debug32
+Debug64
+download
+EDN.ini
+Help
+instruments
+IQ
+Kits/
+NuGet.config
+packages
+packages/
+reports
+sdks/packages/
+Server
+tools
+UpgradeLog*.htm
+UpgradeLog*.XML
+waters.pko.snk
+WDM
+Zips/
+/BioPharm/Waters.Lindisfarne.Api/logs/Waters.HPReader.txt
+/BioPharm/Waters.Lindisfarne.Api/App.config
+/BioPharm/Waters.Biopharm.UnifiProcessing/App.config
+/BioPharm/Waters.Biopharm.Web.Specs/**/*.feature.cs
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+**/dist
+**/tmp
+**/out-tsc
+**/test-reports
+
+# dependencies
+**/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.csproj.user
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+apptools/.vscode/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.gradle/
+build/
+
+# shared files downloaded by build scripts
+nuget.config
+!src/nuget.config
+!wix/
+waters.pko.snk
+.gradle
+tools
+
+# System Files
+.DS_Store
+Thumbs.db
+
+*.wixproj.user
+[Bb]in/
+[Oo]bj/
+wwwroot/
+.vs/
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.pdb
+# NuGet Packages
+*.nupkg
+*.nuget.props
+*.nuget.targets
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+.sonarqube/
+
+# Trace Tool Output Files
+Reports/**
+
+# Packaged Installer Files
+src/Waters.Lindisfarne.Installer/payloads/**
+/src/LindisfarneInstaller.sln.DotSettings.user
+/published_api/
+/published_web/
+/published_specs/
+/src/Waters.Lindisfarne.Service.Launcher/Waters.Lindisfarne.Service.Launcher.vcxproj.filters
+/src/Waters.Lindisfarne.Service.Launcher/Waters.Lindisfarne.Service.Launcher.vcxproj.user
+/published_api.zip
+/published_web.zip
+/published_specs.zip
+/published_trx
+
+# Packaged Escrow files
+/escrow/PeptideMAMEscrow/**
+
+# Local settings file
+appsettings.Local.json
+./Reports
+
+# Angular test coverage results
+BioPharm/Waters.Biopharm.Web/coverage
+*.opencover.xml
+./Requirements
+
+# Pa11y stuff
+/pa11yRunner/results
