@@ -23,7 +23,11 @@ export class AppComponent {
   movies: Array<MovieType>;
   onMovieCreated(movie: MovieType) {
     this.movies.push(movie);
-    };
+  };
+
+  OnArrayChaned(movies: Array<MovieType>) {
+    this.movies = movies;
+  }
 }
 export type MovieType = {
   Title: string;

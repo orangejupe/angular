@@ -1,4 +1,4 @@
 <p>List of movies:</p>
 <span *ngFor="let movie of movies">
-  <app-movie [movie]="movie"></app-movie>
+  <app-movie [movie]="movie" [index]="movies.indexOf(movie)" (favoriteChanged)=onFavoriteChanged($event)></app-movie>
 </span>

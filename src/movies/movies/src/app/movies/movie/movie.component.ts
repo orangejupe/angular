@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { MovieType } from '../.././app.component';
 
 @Component({
@@ -7,11 +7,17 @@ import { MovieType } from '../.././app.component';
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-
-  constructor() { }
-
+  @Output() favoriteChanged = new EventEmitter<{ movie: MovieType, index: number }>();
   @Input() movie!: MovieType;
+  @Input() index!: number;
 
+  constructor() {
+  }
+
+  
+  OnFavoriteChanged() {
+    this.favoriteChanged.emit({ movie: this.movie, index: this.index });
+  }
   ngOnInit(): void {
   }  
 }
