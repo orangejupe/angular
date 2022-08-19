@@ -1,0 +1,5 @@
+<div class="bars"><app-navbar></app-navbar></div>
+<hr />
+<div class="main"><app-movies [movies]="movies"></app-movies></div>
+<hr />
+<div class="bars"><app-createmovie (movieCreated)=onMovieCreated($event)></app-createmovie></div>
