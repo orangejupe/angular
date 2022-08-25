@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movies/movie/movie.component';
-import { CreatemovieComponent } from './createmovie/createmovie.component';
+import { CreateMovieComponent } from './create-movie/create-movie.component';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { CreatemovieComponent } from './createmovie/createmovie.component';
     NavbarComponent,
     MoviesComponent,
     MovieComponent,
-    CreatemovieComponent
+    CreateMovieComponent
   ],
   imports: [
     BrowserModule,
