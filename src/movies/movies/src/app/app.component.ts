@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Movie } from './models';
 
 @Component({
   selector: 'app-root',
@@ -8,29 +9,26 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'movies';
+  movie!: Movie;
+  movies: Array<Movie>;
+
   constructor() {
     this.movies = [];
     for (let i = 0; i < 10; i++) {
       this.movie = {
-        Title: "Title " + i.toString(),
-        Description: "Description " + i.toString(),
-        Favorite: Boolean(i % 2),
+        title: "Title " + i.toString(),
+        description: "Description " + i.toString(),
+        favorite: Boolean(i % 2),
       }
       this.movies.push(this.movie);
     }
   }
-  movie!: MovieType;
-  movies: Array<MovieType>;
-  onMovieCreated(movie: MovieType) {
+  
+  onMovieCreated(movie: Movie) {
     this.movies.push(movie);
   };
 
-  OnArrayChaned(movies: Array<MovieType>) {
+  onArrayChaned(movies: Array<Movie>) {
     this.movies = movies;
   }
-}
-export type MovieType = {
-  Title: string;
-  Description: string;
-  Favorite: boolean;
 }

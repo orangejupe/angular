@@ -17,9 +17,12 @@
     <None Remove="src\app\NavBar\**" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptConfiguration Remove="src\app\CreateMovie\**" />
+    <TypeScriptConfiguration Remove="src\app\create-movie\**" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="src\app\CreateMovie\**" />
+    <None Remove="src\app\create-movie\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\models\" />
   </ItemGroup>
 </Project>
